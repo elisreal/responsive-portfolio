@@ -647,5 +647,19 @@ h2.portfolio {
 		margin-top: 235px;
 	}
 
+	form {
+		width: 96%;
+		display:block;
+	}
+
+	input.form {
+		width: 98%;
+		display: block;
+	}
+
+	textarea.message {
+		width: 100%;
+	}
+
 
 }
