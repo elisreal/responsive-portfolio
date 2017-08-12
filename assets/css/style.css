@@ -83,12 +83,14 @@ li {
 	background-color: #4aaaa5;
 }
 
+
 .divider {
 	position: absolute;
     right:-1px;
     top: 21px;
     color: #E8E8E8;
 }
+
 
 .mainContent {
 	margin: 0 auto;
@@ -338,7 +340,7 @@ h2.portfolio {
 		padding: 0;
 		margin: 0;
 	}
-	/* Fix this later nav is not centered */
+
 	ul {
 		width: 100%;
 		float: left;
@@ -347,10 +349,9 @@ h2.portfolio {
 	}
 
 	li {
-
+		width: 33%;
+		text-align: center;
 	}
-	/* Fix this later nav is not centered */
-
 
 	.mainContent {
 		width: 640px;
@@ -359,6 +360,8 @@ h2.portfolio {
 
 	.content {
 		width: 85%;
+		display:block;
+		overflow:auto;
 		margin: 0 auto;
 		float: none;
 		margin-bottom: 20px;
@@ -383,9 +386,72 @@ h2.portfolio {
 		width: 90%;
 	}
 
+	.portfolioItem1 {
+		width: 100%;
+    	height: 33%;
+    	background-size: contain;
+    	margin-right: 0;
+	}
+
+	.portfolioItem1 {
+		width: 100%;
+    	height: fit-content;
+    	background-size: cover;
+    	margin-right: 0;
+	}
+
+	.portfolioItem2 {
+		width: 100%;
+    	height: fit-content;
+    	background-size: cover;
+    	margin-right: 0;
+	}
+
+	.portfolioItem3 {
+		width: 100%;
+    	height: fit-content;
+    	background-size: cover;
+    	margin-right: 0;
+	}
+
+	.portfolioItem4 {
+		width: 100%;
+    	height: fit-content;
+    	background-size: cover;
+    	margin-right: 0;
+	}
+
+	.portfolioItem5 {
+		width: 100%;
+    	height: fit-content;
+    	background-size: cover;
+    	margin-right: 0;
+	}
+
+	h2.portfolio {
+		width: 100%;
+    	margin-top: 463px;
+	}
+
+	form {
+		width: 96%;
+		display:block;
+	}
+
+	input.form {
+		width: 100%;
+		display: block;
+	}
+
+	textarea.message {
+		width: 102%;
+	}
+
 }
 
-@media only screen and (max-width: 768px) 
+
+
+@media only screen and (min-width: 640px) and (max-width: 768px) 
 
 {
 
@@ -400,32 +466,27 @@ h2.portfolio {
 		width: 768px;
 	}
 
-	.header {
-		width: 100%;
-		text-align: center;
-		padding: 0;
-	}
-
 	.nav {
-		width: 768px;
+		width: 100%;
 		padding: 0;
 		margin: 0;
 	}
-	/* Fix this later nav is not centered */
+
+	.header {
+		margin-left: 27px;
+	}
+
 	ul {
-		width: 100%;
-		float: left;
+		float: right;
 		display: block;
 		margin: 0 auto;
+		padding-right: 20px;
 	}
 
 	li {
 		width: 33%;
 		text-align: center;
-
 	}
-	/* Fix this later nav is not centered */
-
 
 	.mainContent {
 		width: 768px;
@@ -434,13 +495,11 @@ h2.portfolio {
 
 	.content {
 		width: 85%;
+		display:block;
+		overflow:auto;
 		margin: 0 auto;
 		float: none;
 		margin-bottom: 20px;
-	}
-
-	img.photo {
-		width: 100%;
 	}
 
 	.social {
@@ -448,6 +507,7 @@ h2.portfolio {
 		height: 158px;
 		margin: 0 auto;
 		float: none;
+		margin-bottom: 40px;
 	}
 
 	.footer {
@@ -457,5 +517,134 @@ h2.portfolio {
 	.footerCopy {
 		width: 90%;
 	}
+
+	h2.portfolio {
+		width: 100%;
+    	margin-top: 463px;
+	}
+
+	form {
+		width: 96%;
+		display:block;
+	}
+
+	input.form {
+		width: 100%;
+		display: block;
+	}
+
+	textarea.message {
+		width: 102%;
+	}
+
+	.portfolioItem1 {
+		width: 305px;
+	}
+
+	.portfolioItem2 {
+		width: 305px;
+	}
+
+	.portfolioItem3 {
+		width: 305px;
+	}
+
+	.portfolioItem4 {
+		width: 305px;
+	}
+
+	.portfolioItem5 {
+		width: 305px;
+	}
+
+	h2.portfolio {
+		margin-top: 150px;
+	}
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 980px) 
+
+{
+
+
+	html,body {
+		width: 980px;
+	}
+
+	.container {
+		width: 980px;
+	}
+
+	.navContainer {
+		width: 980px;
+	}
+
+	.nav {
+		width: 768px;
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	.header {
+		margin-left: 0;
+	}
+
+	ul {
+		padding-right: 32px;
+	}
+
+	li a {
+		margin-right: 7px;
+	}
+
+	.mainContent {
+		width: 768px;
+	}
+
+	.content {
+		width: 360px;
+		margin-right:40px;
+		margin-left: 0;
+		float: left;
+	}
+
+	.social {
+		width: 208px;
+		float: left;
+	}
+
+	.portfolioItem1 {
+		width: 100%;
+		height: 300px;
+	}
+
+	.portfolioItem2 {
+		width: 100%;
+		height: 300px;
+
+	}
+
+	.portfolioItem3 {
+		width: 100%;
+		height: 300px;
+
+	}
+
+	.portfolioItem4 {
+		width: 100%;
+		height: 300px;
+	}
+
+	.portfolioItem5 {
+		width: 100%;
+		height: 300px;
+	}
+
+	h2.portfolio {
+		margin-top: 235px;
+	}
+
 
 }
